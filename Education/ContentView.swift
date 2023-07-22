@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var multiplicationTable = 2
+    @State private var numberOfRound = 5
+    @State private var roundAnswers = [Int]()
+    @State private var correctAnswer = 0
+    @State private var userNumber = 0
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack {
+            Stepper("Table", value: $multiplicationTable, step: 2)
+                .labelsHidden()
+            
+            TextField("Enter a number", value: $userNumber, format: .number)
+            
+            
+            
         }
-        .padding()
     }
 }
 
