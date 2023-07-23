@@ -13,7 +13,7 @@ struct ContentView: View {
 //    @State private var roundAnswers = [Int]()
     @State private var correctAnswer = 0
     @State private var userNumber = 0
-    @State private var text = ""
+    @FocusState private var amountIsFocused: Bool
     
     var result: Int {
         userNumber * multiplicationTable
@@ -27,20 +27,30 @@ struct ContentView: View {
                     TextField("", value: $userNumber, format: .number)
                         .textFieldStyle(.roundedBorder)
                         .keyboardType(.numberPad)
+                        .focused($amountIsFocused)
                 }
                 Section("Multiply by:") {
-//                    Stepper("\(multiplicationTable)", value: $multiplicationTable, in: 2...12)
                     Picker("Pick a number:", selection: $multiplicationTable) {
-                        ForEach(multiplicationTable..<13, id: \.self) { number in
+                        ForEach(multiplicationTable..<13) { number in
                             Text("\(number)")
                         }
+                        
                     }
+                    .pickerStyle(.automatic)
                 }
                 Section("Result:") {
                     Text("\(result)")
                 }
             }
             .navigationTitle("Education")
+            .toolbar {
+                ToolbarItemGroup(placement: .keyboard) {
+                    Spacer()
+                    Button("Done") {
+                        amountIsFocused = false
+                    }
+                }
+            }
         }
     }
 }
