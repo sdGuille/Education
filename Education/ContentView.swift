@@ -15,33 +15,48 @@ struct ContentView: View {
     @State private var userNumber = 0
     @FocusState private var amountIsFocused: Bool
     
+    @State private var factoreOne = 0
+    @State private var factorTwo = 0
+    @State private var answer = 0
+    
     var result: Int {
         userNumber * multiplicationTable
     }
     
     var body: some View {
         NavigationStack {
-            List {
-                Text("Welcome to multiply operations")
-                Section("Enter your number:") {
-                    TextField("", value: $userNumber, format: .number)
-                        .textFieldStyle(.roundedBorder)
-                        .keyboardType(.numberPad)
-                        .focused($amountIsFocused)
-                }
-                Section("Multiply by:") {
-                    Picker("Pick a number:", selection: $multiplicationTable) {
-                        ForEach(multiplicationTable..<13) { number in
-                            Text("\(number)")
-                        }
-                        
+            VStack {
+                Form {
+                    Text("Welcome to multiply operations")
+                    Section("Enter your number:") {
+                        TextField("", value: $userNumber, format: .number)
+                            .keyboardType(.numberPad)
+                            .focused($amountIsFocused)
                     }
-                    .pickerStyle(.automatic)
-                }
-                Section("Result:") {
-                    Text("\(result)")
+                    Section("Multiply by:") {
+                        Picker("Pick a number:", selection: $multiplicationTable) {
+                            ForEach(multiplicationTable..<13) { number in
+                                Text("\(number)")
+                            }
+                            
+                        }
+                        .pickerStyle(.automatic)
+                    }
+                    Section("Practice") {
+                        Text("\(factoreOne) x \(factorTwo)")
+                    }
+                    
+                    Section("Result") {
+                        Text("\(answer)")
+                    }
+        
+                    Button("Next Question") {
+                        askQuestion()
+                    }
                 }
             }
+            .onAppear(perform: askQuestion)
+            
             .navigationTitle("Education")
             .toolbar {
                 ToolbarItemGroup(placement: .keyboard) {
@@ -52,6 +67,12 @@ struct ContentView: View {
                 }
             }
         }
+    }
+    
+    func askQuestion() {
+        factoreOne = Int.random(in: 0...12)
+        factorTwo = Int.random(in: 0...12)
+        answer = factoreOne * factorTwo
     }
 }
 
