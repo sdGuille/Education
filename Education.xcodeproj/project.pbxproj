@@ -11,6 +11,7 @@
 		CFA054782A6B496600C68019 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA054772A6B496600C68019 /* ContentView.swift */; };
 		CFA0547A2A6B496700C68019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFA054792A6B496700C68019 /* Assets.xcassets */; };
 		CFA0547D2A6B496700C68019 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFA0547C2A6B496700C68019 /* Preview Assets.xcassets */; };
+		CFF882762A7078ED0035401A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF882752A7078ED0035401A /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		CFA054772A6B496600C68019 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CFA054792A6B496700C68019 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFA0547C2A6B496700C68019 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CFF882752A7078ED0035401A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				CFA054772A6B496600C68019 /* ContentView.swift */,
 				CFA054792A6B496700C68019 /* Assets.xcassets */,
 				CFA0547B2A6B496700C68019 /* Preview Content */,
+				CFF882752A7078ED0035401A /* SettingsView.swift */,
 			);
 			path = Education;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFF882762A7078ED0035401A /* SettingsView.swift in Sources */,
 				CFA054782A6B496600C68019 /* ContentView.swift in Sources */,
 				CFA054762A6B496600C68019 /* EducationApp.swift in Sources */,
 			);
