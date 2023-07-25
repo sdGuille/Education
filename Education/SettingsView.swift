@@ -10,7 +10,8 @@ import SwiftUI
 struct SettingsView: View {
     @State private var numberOfQuestion = 6
     @State var learningEnable: Bool = true
-    
+    @State var dailyReminderEnabled = false
+    @State var dailyReminderTime = Date(timeIntervalSince1970: 0)
     
     var body: some View {
         List {
@@ -38,6 +39,11 @@ struct SettingsView: View {
             }
             
             Section("Notifications") {
+                HStack {
+                    Toggle("Daily Reminder", isOn: $dailyReminderEnabled)
+                    DatePicker("", selection: $dailyReminderTime)
+                        .datePickerStyle(.compact)
+                }
             }
         }
     }
