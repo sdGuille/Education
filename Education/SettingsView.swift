@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SettingsView: View {
     @State private var numberOfQuestion = 6
+    @State var learningEnable: Bool = true
     
     
     var body: some View {
@@ -32,6 +33,8 @@ struct SettingsView: View {
                         .font(.caption2)
                         .foregroundColor(.secondary)
                 }
+                Toggle("Learning Enabled", isOn: $learningEnable)
+                
             }
             
             Section("Notifications") {
