@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @State private var numberOfQuestion = 6
+    
+    
     var body: some View {
         List {
             Text("Settings")
@@ -18,6 +21,17 @@ struct SettingsView: View {
             }
             
             Section("Game") {
+                VStack(alignment: .leading) {
+                    Stepper(
+                        "Number of Questions: \(numberOfQuestion)",
+                        value: $numberOfQuestion,
+                        in: 3...20
+                    )
+                    
+                    Text("Any change will affect the next game")
+                        .font(.caption2)
+                        .foregroundColor(.secondary)
+                }
             }
             
             Section("Notifications") {
