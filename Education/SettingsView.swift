@@ -41,8 +41,12 @@ struct SettingsView: View {
             Section("Notifications") {
                 HStack {
                     Toggle("Daily Reminder", isOn: $dailyReminderEnabled)
-                    DatePicker("", selection: $dailyReminderTime)
-                        .datePickerStyle(.compact)
+                    DatePicker(
+                        "", selection: $dailyReminderTime,
+                        displayedComponents: .hourAndMinute
+                    )
+                    .disabled(dailyReminderEnabled == false)
+                    .datePickerStyle(.compact)
                 }
             }
         }

@@ -53,6 +53,7 @@ struct ContentView: View {
                     Button("Next Question") {
                         askQuestion()
                     }
+                    NavigationLink("Settings", destination: SettingsView())
                 }
             }
             .onAppear(perform: askQuestion)
