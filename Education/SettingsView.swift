@@ -52,6 +52,11 @@ struct SettingsView: View {
                 of: dailyReminderEnabled,
                 perform: { _ in configureNotification() }
             )
+            
+            .onChange(
+                of: dailyReminderTime,
+                perform: { _ in configureNotification() }
+            )
         }
     }
     
