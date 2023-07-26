@@ -23,11 +23,12 @@ struct SettingsView: View {
             
             Section(header: Text("Appearance")) {
                 VStack(alignment: .leading) {
-                    Picker("", selection: $appearance) {
-                        Text(Appearance.light.name)
-                        Text(Appearance.dark.name)
-                        Text(Appearance.automatic.name)
+                    Picker("Pick", selection: $appearance) {
+                        ForEach(Appearance.allCases) { appearance in
+                            Text(appearance.name).tag(appearance)
+                        }
                     }
+                    .pickerStyle(.segmented)
                     
                     ColorPicker(
                         "Card Background Color",
