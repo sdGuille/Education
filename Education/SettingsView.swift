@@ -48,6 +48,19 @@ struct SettingsView: View {
                     .datePickerStyle(.compact)
                 }
             }
+            .onChange(
+                of: dailyReminderEnabled,
+                perform: { _ in configureNotification() }
+            )
+        }
+    }
+    
+    func configureNotification() {
+        if dailyReminderEnabled {
+            LocalNotifications.shared.createReminder(
+                time: dailyReminderTime)
+        } else {
+            LocalNotifications.shared.deleteReminder()
         }
     }
 }
