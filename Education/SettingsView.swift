@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SettingsView: View {
     @State private var numberOfQuestion = 6
+    @State var appearance: Appearance = .automatic
     @State var learningEnable: Bool = true
     @State var dailyReminderEnabled = false
     @State var dailyReminderTime = Date(timeIntervalSince1970: 0)
@@ -21,10 +22,20 @@ struct SettingsView: View {
                 .padding(.bottom, 8)
             
             Section(header: Text("Appearance")) {
-                ColorPicker(
-                    "Card Background Color",
-                            selection: $cardBackgroundColor
-                )
+                VStack(alignment: .leading) {
+                    Picker("", selection: $appearance) {
+                        Text(Appearance.light.name)
+                        Text(Appearance.dark.name)
+                        Text(Appearance.automatic.name)
+                    }
+                    
+                    ColorPicker(
+                        "Card Background Color",
+                                selection: $cardBackgroundColor
+                    )
+                    
+                    
+                }
             }
             
             Section("Game") {
