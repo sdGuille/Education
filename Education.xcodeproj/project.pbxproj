@@ -15,6 +15,7 @@
 		CFF8827A2A7163B40035401A /* LocalNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF882772A7163B40035401A /* LocalNotifications.swift */; };
 		CFF8827B2A7163B40035401A /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF882782A7163B40035401A /* Color+Extension.swift */; };
 		CFF8827C2A7163B40035401A /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF882792A7163B40035401A /* Appearance.swift */; };
+		CFF8827E2A7189A40035401A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF8827D2A7189A40035401A /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		CFF882772A7163B40035401A /* LocalNotifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalNotifications.swift; sourceTree = "<group>"; };
 		CFF882782A7163B40035401A /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		CFF882792A7163B40035401A /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		CFF8827D2A7189A40035401A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				CFF882792A7163B40035401A /* Appearance.swift */,
 				CFF882782A7163B40035401A /* Color+Extension.swift */,
 				CFF882772A7163B40035401A /* LocalNotifications.swift */,
+				CFF8827D2A7189A40035401A /* HomeView.swift */,
 			);
 			path = Education;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFF8827A2A7163B40035401A /* LocalNotifications.swift in Sources */,
+				CFF8827E2A7189A40035401A /* HomeView.swift in Sources */,
 				CFF8827C2A7163B40035401A /* Appearance.swift in Sources */,
 				CFF8827B2A7163B40035401A /* Color+Extension.swift in Sources */,
 				CFF882762A7078ED0035401A /* SettingsView.swift in Sources */,
