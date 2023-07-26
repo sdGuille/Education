@@ -35,7 +35,6 @@ struct SettingsView: View {
                         .foregroundColor(.secondary)
                 }
                 Toggle("Learning Enabled", isOn: $learningEnable)
-                
             }
             
             Section("Notifications") {

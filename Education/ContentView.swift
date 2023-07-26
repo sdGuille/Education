@@ -28,20 +28,7 @@ struct ContentView: View {
             VStack {
                 Form {
                     Text("Welcome to multiply operations")
-                    Section("Enter your number:") {
-                        TextField("", value: $userNumber, format: .number)
-                            .keyboardType(.numberPad)
-                            .focused($amountIsFocused)
-                    }
-                    Section("Multiply by:") {
-                        Picker("Pick a number:", selection: $multiplicationTable) {
-                            ForEach(multiplicationTable..<13) { number in
-                                Text("\(number)")
-                            }
-                            
-                        }
-                        .pickerStyle(.automatic)
-                    }
+
                     Section("Practice") {
                         Text("\(factoreOne) x \(factorTwo)")
                     }
