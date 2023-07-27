@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF0172552A732ABB000359EE /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0172522A732ABB000359EE /* Profile.swift */; };
+		CF0172562A732ABB000359EE /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0172532A732ABB000359EE /* UserManager.swift */; };
+		CF0172572A732ABB000359EE /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0172542A732ABB000359EE /* Settings.swift */; };
 		CF0888442A72CE1B0053704A /* HorizontallyAlignedLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0888432A72CE1B0053704A /* HorizontallyAlignedLabelStyle.swift */; };
 		CFA054762A6B496600C68019 /* EducationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA054752A6B496600C68019 /* EducationApp.swift */; };
 		CFA054782A6B496600C68019 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA054772A6B496600C68019 /* ContentView.swift */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF0172522A732ABB000359EE /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		CF0172532A732ABB000359EE /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		CF0172542A732ABB000359EE /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		CF0888432A72CE1B0053704A /* HorizontallyAlignedLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontallyAlignedLabelStyle.swift; sourceTree = "<group>"; };
 		CFA054722A6B496600C68019 /* Education.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Education.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA054752A6B496600C68019 /* EducationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationApp.swift; sourceTree = "<group>"; };
@@ -46,6 +52,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF0172512A732A26000359EE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				CF0172522A732ABB000359EE /* Profile.swift */,
+				CF0172542A732ABB000359EE /* Settings.swift */,
+				CF0172532A732ABB000359EE /* UserManager.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		CF0888422A72CE050053704A /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +90,7 @@
 		CFA054742A6B496600C68019 /* Education */ = {
 			isa = PBXGroup;
 			children = (
+				CF0172512A732A26000359EE /* Profile */,
 				CF0888422A72CE050053704A /* Welcome */,
 				CFA054752A6B496600C68019 /* EducationApp.swift */,
 				CFA054772A6B496600C68019 /* ContentView.swift */,
@@ -167,13 +184,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFF8827A2A7163B40035401A /* LocalNotifications.swift in Sources */,
+				CF0172552A732ABB000359EE /* Profile.swift in Sources */,
 				CFF8827E2A7189A40035401A /* HomeView.swift in Sources */,
 				CFF8827C2A7163B40035401A /* Appearance.swift in Sources */,
 				CFF882802A71DA590035401A /* WelcomeView.swift in Sources */,
 				CFF8827B2A7163B40035401A /* Color+Extension.swift in Sources */,
+				CF0172572A732ABB000359EE /* Settings.swift in Sources */,
 				CF0888442A72CE1B0053704A /* HorizontallyAlignedLabelStyle.swift in Sources */,
 				CFF882762A7078ED0035401A /* SettingsView.swift in Sources */,
 				CFA054782A6B496600C68019 /* ContentView.swift in Sources */,
+				CF0172562A732ABB000359EE /* UserManager.swift in Sources */,
 				CFA054762A6B496600C68019 /* EducationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
