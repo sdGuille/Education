@@ -19,16 +19,7 @@ struct WelcomeView: View {
                 .blur(radius: 5)
                 .opacity(0.08)
             
-            HStack {
-                Image(systemName: "table")
-                    .resizable()
-                    .frame(width: 30, height: 30)
-                    .overlay(Circle().stroke(Color.gray, lineWidth: 1))
-                    .background(Color(white: 0.9))
-                    .clipShape(Circle())
-                    .foregroundColor(.red)
-                
-                
+            Label {
                 VStack(alignment: .leading) {
                     Text("Welcome to")
                         .font(.headline)
@@ -38,9 +29,19 @@ struct WelcomeView: View {
                         .bold()
                 }
                 .foregroundColor(.red)
-                .lineLimit(1)
+                .lineLimit(2)
+                .multilineTextAlignment(.leading)
                 .padding(.horizontal)
+            } icon: {
+                Image(systemName: "table")
+                    .resizable()
+                    .frame(width: 30, height: 30)
+                    .overlay(Circle().stroke(Color.gray, lineWidth: 1))
+                    .background(Color(white: 0.9))
+                    .clipShape(Circle())
+                    .foregroundColor(.red)
             }
+            .labelStyle(HorizontallyAlignedLabelStyle())
         }
     }
 }
