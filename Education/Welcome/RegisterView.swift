@@ -20,9 +20,17 @@ struct RegisterView: View {
                 .focused($nameFieldFocused)
                 .submitLabel(.done)
                 .bordered()
-            Button(action: registerUser) {
-                Text("Ok")
+            Button(action: self.registerUser) {
+                HStack {
+                    Image(systemName: "checkmark")
+                        .resizable()
+                        .frame(width: 16, height: 16, alignment: .center)
+                    Text("Ok")
+                        .font(.body)
+                        .bold()
+                }
             }
+            .bordered()
             Spacer()
         }
         .padding()
