@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct RegisterView: View {
+    
+    
+    @FocusState var nameFieldFocused: Bool
     @State var name: String = ""
     
     var body: some View {
@@ -15,6 +18,8 @@ struct RegisterView: View {
             Spacer()
             WelcomeMessageView()
             TextField("Type your name....", text: $name)
+                .focused($nameFieldFocused)
+                .submitLabel(.done)
                 .bordered()
             Spacer()
         }
