@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct EducationApp: App {
+    let userManager = UserManager()
+    
+    init() {
+        userManager.load()
+    }
+    
     var body: some Scene {
         WindowGroup {
             RegisterView()
+                .environmentObject(userManager)
         }
     }
 }

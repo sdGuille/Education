@@ -8,24 +8,32 @@
 import SwiftUI
 
 struct RegisterView: View {
-    
-    
+
     @FocusState var nameFieldFocused: Bool
-    @State var name: String = ""
+    @EnvironmentObject var userManager: UserManager
     
     var body: some View {
         VStack {
             Spacer()
             WelcomeMessageView()
-            TextField("Type your name....", text: $name)
+            TextField("Type your name....", text: $userManager.profile.name)
                 .focused($nameFieldFocused)
                 .submitLabel(.done)
                 .bordered()
+            Button(action: registerUser) {
+                Text("Ok")
+            }
             Spacer()
         }
         .padding()
         .background(WelcomeBackgroundImage())
         
+    }
+}
+
+extension RegisterView {
+    func registerUser() {
+        userManager.persistProfile()
     }
 }
 
@@ -35,8 +43,12 @@ struct KuchiTextStyle: TextFieldStyle {
             return configuration
         }
 }
+
 struct RegisterView_Previews: PreviewProvider {
+    static let user = UserManager(name: "Guille")
+    
     static var previews: some View {
         RegisterView()
+            .environmentObject(user)
     }
 }
