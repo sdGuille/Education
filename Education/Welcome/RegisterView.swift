@@ -20,6 +20,14 @@ struct RegisterView: View {
                 .focused($nameFieldFocused)
                 .submitLabel(.done)
                 .bordered()
+            HStack {
+                Spacer()
+                Text("\(userManager.profile.name.count)")
+                    .font(.caption)
+                    .foregroundColor(
+                        userManager.isUserNameValid() ? .green : .red)
+                    .padding(.trailing)
+            }
             Button(action: self.registerUser) {
                 HStack {
                     Image(systemName: "checkmark")
