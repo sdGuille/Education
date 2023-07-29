@@ -30,6 +30,7 @@ struct RegisterView: View {
                         .bold()
                 }
             }
+            .disabled(!userManager.isUserNameValid())
             .bordered()
             Spacer()
         }
