@@ -16,6 +16,7 @@
 		CF0172602A7332C7000359EE /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF01725F2A7332C7000359EE /* RegisterView.swift */; };
 		CF0172622A73529D000359EE /* BorderedViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0172612A73529D000359EE /* BorderedViewModifier.swift */; };
 		CF0888442A72CE1B0053704A /* HorizontallyAlignedLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0888432A72CE1B0053704A /* HorizontallyAlignedLabelStyle.swift */; };
+		CF8FFB932A795A580009370C /* PraticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8FFB922A795A580009370C /* PraticeView.swift */; };
 		CFA054762A6B496600C68019 /* EducationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA054752A6B496600C68019 /* EducationApp.swift */; };
 		CFA054782A6B496600C68019 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA054772A6B496600C68019 /* ContentView.swift */; };
 		CFA0547A2A6B496700C68019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFA054792A6B496700C68019 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		CF01725F2A7332C7000359EE /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		CF0172612A73529D000359EE /* BorderedViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedViewModifier.swift; sourceTree = "<group>"; };
 		CF0888432A72CE1B0053704A /* HorizontallyAlignedLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontallyAlignedLabelStyle.swift; sourceTree = "<group>"; };
+		CF8FFB922A795A580009370C /* PraticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PraticeView.swift; sourceTree = "<group>"; };
 		CFA054722A6B496600C68019 /* Education.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Education.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA054752A6B496600C68019 /* EducationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationApp.swift; sourceTree = "<group>"; };
 		CFA054772A6B496600C68019 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				CFF882782A7163B40035401A /* Color+Extension.swift */,
 				CFF882772A7163B40035401A /* LocalNotifications.swift */,
 				CFF8827D2A7189A40035401A /* HomeView.swift */,
+				CF8FFB922A795A580009370C /* PraticeView.swift */,
 			);
 			path = Education;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				CF0888442A72CE1B0053704A /* HorizontallyAlignedLabelStyle.swift in Sources */,
 				CFF882762A7078ED0035401A /* SettingsView.swift in Sources */,
 				CFA054782A6B496600C68019 /* ContentView.swift in Sources */,
+				CF8FFB932A795A580009370C /* PraticeView.swift in Sources */,
 				CF0172562A732ABB000359EE /* UserManager.swift in Sources */,
 				CF0172602A7332C7000359EE /* RegisterView.swift in Sources */,
 				CF01725E2A732E29000359EE /* WelcomeMessageView.swift in Sources */,
