@@ -10,9 +10,14 @@ import SwiftUI
 struct PraticeView: View {
     @State var amount: Double = 0
     @State var quantity = 0.0
+    @State var password = ""
     
     var body: some View {
         VStack{
+            
+            SecureField.init("Enter your password", text: $password)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+            
             HStack {
                 Text("0")
                 Slider(
