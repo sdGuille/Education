@@ -19,6 +19,7 @@ struct RegisterView: View {
             TextField("Type your name....", text: $userManager.profile.name)
                 .focused($nameFieldFocused)
                 .submitLabel(.done)
+                .onSubmit(registerUser)
                 .bordered()
             HStack {
                 Spacer()
@@ -59,11 +60,14 @@ struct RegisterView: View {
 
 extension RegisterView {
     func registerUser() {
+        nameFieldFocused = false
+        
         if userManager.settings.rememberUser {
             userManager.persistProfile()
         } else {
             userManager.clear()
         }
+        
         userManager.persistProfile()
         userManager.setRegistered()
     }
