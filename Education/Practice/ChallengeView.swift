@@ -34,7 +34,12 @@ import SwiftUI
 
 struct ChallengeView: View {
   var body: some View {
-    Text("Hello World!")
+    Image("swift_world")
+          .resizable()
+          .background(Color.red)
+          .frame(width: 100, height: 50, alignment: .center)
+          .minimumScaleFactor(0.5)
+          .background(Color.yellow)
   }
 }
 
