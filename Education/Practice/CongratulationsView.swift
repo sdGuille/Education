@@ -33,6 +33,7 @@
 import SwiftUI
 
 struct CongratulationsView: View {
+    @ObservedObject var challengesViewModel = ChallengesViewModel()
   let avatarSize: CGFloat = 120
   let userName: String
   
@@ -41,7 +42,21 @@ struct CongratulationsView: View {
   }
   
   var body: some View {
-    EmptyView()
+      VStack{
+          Text("Congratulations")
+              .font(.title)
+              .foregroundColor(.gray)
+          Text("You're awesome!")
+              .fontWeight(.bold)
+              .foregroundColor(.gray)
+          Button {
+              challengesViewModel.restart()
+          } label: {
+              Text("Play Again")
+          }
+          .padding(.top)
+
+      }
   }
 }
 
