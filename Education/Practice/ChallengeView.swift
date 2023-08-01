@@ -34,15 +34,13 @@ import SwiftUI
 
 struct ChallengeView: View {
   var body: some View {
-    Image("swift_world")
-          .resizable()
-          .background(Color.red)
-          .frame(width: 100, height: 50, alignment: .center)
-          .minimumScaleFactor(0.5)
-          .background(Color.yellow)
+      HStack(alignment: .firstTextBaseline) {
+          Text("Welcome to Kuchi").font(.caption)
+          Text("Welcome to Kuchi").font(.title)
+          Button(action: {}, label: { Text("OK").font(.body) })
+      }
   }
 }
-
 
 struct ChallengeView_Previews: PreviewProvider {
   static var previews: some View {
