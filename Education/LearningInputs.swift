@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PraticeView: View {
+struct LearningInputs: View {
     @State var amount: Double = 0
     @State var quantity = 0.0
     @State var password = ""
@@ -37,6 +37,6 @@ struct PraticeView: View {
 
 struct PraticeView_Previews: PreviewProvider {
     static var previews: some View {
-        PraticeView()
+        LearningInputs()
     }
 }

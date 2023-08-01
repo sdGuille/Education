@@ -16,7 +16,14 @@
 		CF0172602A7332C7000359EE /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF01725F2A7332C7000359EE /* RegisterView.swift */; };
 		CF0172622A73529D000359EE /* BorderedViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0172612A73529D000359EE /* BorderedViewModifier.swift */; };
 		CF0888442A72CE1B0053704A /* HorizontallyAlignedLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0888432A72CE1B0053704A /* HorizontallyAlignedLabelStyle.swift */; };
-		CF8FFB932A795A580009370C /* PraticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8FFB922A795A580009370C /* PraticeView.swift */; };
+		CF8FFB932A795A580009370C /* LearningInputs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8FFB922A795A580009370C /* LearningInputs.swift */; };
+		CF8FFB9C2A7963290009370C /* CongratulationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8FFB952A7963290009370C /* CongratulationsView.swift */; };
+		CF8FFB9D2A7963290009370C /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8FFB962A7963290009370C /* PracticeView.swift */; };
+		CF8FFB9E2A7963290009370C /* ChoicesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8FFB972A7963290009370C /* ChoicesRow.swift */; };
+		CF8FFB9F2A7963290009370C /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8FFB982A7963290009370C /* QuestionView.swift */; };
+		CF8FFBA02A7963290009370C /* ChallengesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8FFB992A7963290009370C /* ChallengesViewModel.swift */; };
+		CF8FFBA12A7963290009370C /* ChoicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8FFB9A2A7963290009370C /* ChoicesView.swift */; };
+		CF8FFBA22A7963290009370C /* ChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8FFB9B2A7963290009370C /* ChallengeView.swift */; };
 		CFA054762A6B496600C68019 /* EducationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA054752A6B496600C68019 /* EducationApp.swift */; };
 		CFA054782A6B496600C68019 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA054772A6B496600C68019 /* ContentView.swift */; };
 		CFA0547A2A6B496700C68019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFA054792A6B496700C68019 /* Assets.xcassets */; };
@@ -39,7 +46,14 @@
 		CF01725F2A7332C7000359EE /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		CF0172612A73529D000359EE /* BorderedViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedViewModifier.swift; sourceTree = "<group>"; };
 		CF0888432A72CE1B0053704A /* HorizontallyAlignedLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontallyAlignedLabelStyle.swift; sourceTree = "<group>"; };
-		CF8FFB922A795A580009370C /* PraticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PraticeView.swift; sourceTree = "<group>"; };
+		CF8FFB922A795A580009370C /* LearningInputs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningInputs.swift; sourceTree = "<group>"; };
+		CF8FFB952A7963290009370C /* CongratulationsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CongratulationsView.swift; sourceTree = "<group>"; };
+		CF8FFB962A7963290009370C /* PracticeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
+		CF8FFB972A7963290009370C /* ChoicesRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoicesRow.swift; sourceTree = "<group>"; };
+		CF8FFB982A7963290009370C /* QuestionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		CF8FFB992A7963290009370C /* ChallengesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengesViewModel.swift; sourceTree = "<group>"; };
+		CF8FFB9A2A7963290009370C /* ChoicesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoicesView.swift; sourceTree = "<group>"; };
+		CF8FFB9B2A7963290009370C /* ChallengeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeView.swift; sourceTree = "<group>"; };
 		CFA054722A6B496600C68019 /* Education.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Education.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA054752A6B496600C68019 /* EducationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationApp.swift; sourceTree = "<group>"; };
 		CFA054772A6B496600C68019 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +110,20 @@
 			path = Welcome;
 			sourceTree = "<group>";
 		};
+		CF8FFB942A79630C0009370C /* Practice */ = {
+			isa = PBXGroup;
+			children = (
+				CF8FFB992A7963290009370C /* ChallengesViewModel.swift */,
+				CF8FFB9B2A7963290009370C /* ChallengeView.swift */,
+				CF8FFB972A7963290009370C /* ChoicesRow.swift */,
+				CF8FFB9A2A7963290009370C /* ChoicesView.swift */,
+				CF8FFB952A7963290009370C /* CongratulationsView.swift */,
+				CF8FFB962A7963290009370C /* PracticeView.swift */,
+				CF8FFB982A7963290009370C /* QuestionView.swift */,
+			);
+			path = Practice;
+			sourceTree = "<group>";
+		};
 		CFA054692A6B496600C68019 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +143,7 @@
 		CFA054742A6B496600C68019 /* Education */ = {
 			isa = PBXGroup;
 			children = (
+				CF8FFB942A79630C0009370C /* Practice */,
 				CF0172512A732A26000359EE /* Profile */,
 				CF0888422A72CE050053704A /* Welcome */,
 				CFA054752A6B496600C68019 /* EducationApp.swift */,
@@ -126,7 +155,7 @@
 				CFF882782A7163B40035401A /* Color+Extension.swift */,
 				CFF882772A7163B40035401A /* LocalNotifications.swift */,
 				CFF8827D2A7189A40035401A /* HomeView.swift */,
-				CF8FFB922A795A580009370C /* PraticeView.swift */,
+				CF8FFB922A795A580009370C /* LearningInputs.swift */,
 			);
 			path = Education;
 			sourceTree = "<group>";
@@ -212,21 +241,28 @@
 				CFF8827A2A7163B40035401A /* LocalNotifications.swift in Sources */,
 				CF01725A2A732C81000359EE /* WelcomeBackgroundImage.swift in Sources */,
 				CF01725C2A732DC2000359EE /* LogoImage.swift in Sources */,
+				CF8FFBA22A7963290009370C /* ChallengeView.swift in Sources */,
 				CF0172552A732ABB000359EE /* Profile.swift in Sources */,
 				CF0172622A73529D000359EE /* BorderedViewModifier.swift in Sources */,
 				CFF8827E2A7189A40035401A /* HomeView.swift in Sources */,
 				CFF8827C2A7163B40035401A /* Appearance.swift in Sources */,
 				CFF882802A71DA590035401A /* WelcomeView.swift in Sources */,
+				CF8FFB9E2A7963290009370C /* ChoicesRow.swift in Sources */,
 				CFF8827B2A7163B40035401A /* Color+Extension.swift in Sources */,
+				CF8FFBA02A7963290009370C /* ChallengesViewModel.swift in Sources */,
 				CF0172572A732ABB000359EE /* Settings.swift in Sources */,
 				CF0888442A72CE1B0053704A /* HorizontallyAlignedLabelStyle.swift in Sources */,
+				CF8FFBA12A7963290009370C /* ChoicesView.swift in Sources */,
+				CF8FFB9D2A7963290009370C /* PracticeView.swift in Sources */,
 				CFF882762A7078ED0035401A /* SettingsView.swift in Sources */,
 				CFA054782A6B496600C68019 /* ContentView.swift in Sources */,
-				CF8FFB932A795A580009370C /* PraticeView.swift in Sources */,
+				CF8FFB932A795A580009370C /* LearningInputs.swift in Sources */,
 				CF0172562A732ABB000359EE /* UserManager.swift in Sources */,
 				CF0172602A7332C7000359EE /* RegisterView.swift in Sources */,
+				CF8FFB9F2A7963290009370C /* QuestionView.swift in Sources */,
 				CF01725E2A732E29000359EE /* WelcomeMessageView.swift in Sources */,
 				CFA054762A6B496600C68019 /* EducationApp.swift in Sources */,
+				CF8FFB9C2A7963290009370C /* CongratulationsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
