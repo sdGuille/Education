@@ -26,6 +26,7 @@
 		CF8FFBA22A7963290009370C /* ChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8FFB9B2A7963290009370C /* ChallengeView.swift */; };
 		CF8FFBA42A79A1630009370C /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8FFBA32A79A1630009370C /* StarterView.swift */; };
 		CF8FFBA62A7AA90D0009370C /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8FFBA52A7AA90D0009370C /* HistoryView.swift */; };
+		CF8FFBA82A7AD37B0009370C /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8FFBA72A7AD37B0009370C /* ScoreView.swift */; };
 		CFA054762A6B496600C68019 /* EducationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA054752A6B496600C68019 /* EducationApp.swift */; };
 		CFA054782A6B496600C68019 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA054772A6B496600C68019 /* ContentView.swift */; };
 		CFA0547A2A6B496700C68019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFA054792A6B496700C68019 /* Assets.xcassets */; };
@@ -58,6 +59,7 @@
 		CF8FFB9B2A7963290009370C /* ChallengeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChallengeView.swift; sourceTree = "<group>"; };
 		CF8FFBA32A79A1630009370C /* StarterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
 		CF8FFBA52A7AA90D0009370C /* HistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		CF8FFBA72A7AD37B0009370C /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		CFA054722A6B496600C68019 /* Education.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Education.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFA054752A6B496600C68019 /* EducationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationApp.swift; sourceTree = "<group>"; };
 		CFA054772A6B496600C68019 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				CF8FFB952A7963290009370C /* CongratulationsView.swift */,
 				CF8FFB962A7963290009370C /* PracticeView.swift */,
 				CF8FFB982A7963290009370C /* QuestionView.swift */,
+				CF8FFBA72A7AD37B0009370C /* ScoreView.swift */,
 			);
 			path = Practice;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				CF0172602A7332C7000359EE /* RegisterView.swift in Sources */,
 				CF8FFB9F2A7963290009370C /* QuestionView.swift in Sources */,
 				CF01725E2A732E29000359EE /* WelcomeMessageView.swift in Sources */,
+				CF8FFBA82A7AD37B0009370C /* ScoreView.swift in Sources */,
 				CFA054762A6B496600C68019 /* EducationApp.swift in Sources */,
 				CF8FFB9C2A7963290009370C /* CongratulationsView.swift in Sources */,
 			);
