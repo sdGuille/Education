@@ -7,17 +7,10 @@
 
 import SwiftUI
 
-class Box<T> {
-    var wrappedValue: T
-    init(initialValue value: T) {
-        self.wrappedValue = value
-    }
-}
-
-
 struct ScoreView: View {
     @State var numberOfAnswered = 0
-    var numberOfQuestions = 5
+    /// No State property beacuese never changes and var is not needed
+    let numberOfQuestions: Int
     
     var body: some View {
         Button {
@@ -40,6 +33,6 @@ struct ScoreView: View {
 
 struct ScoreView_Previews: PreviewProvider {
     static var previews: some View {
-        ScoreView()
+        ScoreView(numberOfQuestions: 5)
     }
 }
